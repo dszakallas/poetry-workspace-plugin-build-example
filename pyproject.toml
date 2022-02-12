@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "pwp-build"
+version = "0.1.0"
+description = "root"
+authors = []
+
+[tool.poetry.dependencies]
+python = "^3.9"
+poetry = "^1.2.0a1"
+
+[tool.poetry-workspace-plugin.workspaces]
+pwp-build-workspace-a = "workspace_a"
+pwp-build-workspace-b = "workspace_b"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,9 @@
+[tool.poetry]
+name = "pwp-build-workspace-a"
+version = "0.1.0"
+description = "workspace a"
+authors = []
+
+[tool.poetry-workspace-plugin]
+parent = "../"
+

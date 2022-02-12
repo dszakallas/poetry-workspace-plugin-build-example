@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "pwp-build-workspace-b"
+version = "0.1.0"
+description = "workspace b"
+authors = []
+
+[tool.poetry-workspace-plugin]
+parent = "../"
+dependency-range = "^" # maybe should be allowed only for root?
+
+[tool.poetry-workspace-plugin.dependency-ranges]
+pwp-build-workspace-a = "~"
+
+[tool.poetry.dependencies]
+pwp-build-workspace-a = { path = "../workspace_a" }
+poetry = "^1.2.0a1"
+python = "^3.9"
+
