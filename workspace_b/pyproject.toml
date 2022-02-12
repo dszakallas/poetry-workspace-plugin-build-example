@@ -7,7 +7,7 @@ authors = []
 [tool.poetry-workspace-plugin]
 parent = "../"
 # the default dependency range to be used for workspace dependencies of this package. maybe should be allowed only for root?
-dependency-range = ""
+dependency-range = "" # exact match
 
 [tool.poetry-workspace-plugin.dependency-ranges]
 # each workspace dep can have its own range config
